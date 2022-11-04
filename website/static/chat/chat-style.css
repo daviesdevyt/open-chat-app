@@ -1,0 +1,136 @@
+body {
+	margin: 20px;
+}
+
+.chat-online {
+	color: #34ce57;
+}
+
+.chat-offline {
+	color: #e4606d;
+}
+
+label input {
+	position: absolute;
+	top: -2px;
+	left: -700px;
+}
+#progress-ui {
+	display: none;
+}
+
+.responsive {
+	width: 100%;
+	height: auto;
+}
+
+.chat-messages {
+	display: flex;
+	flex-direction: column;
+	height: 80vh;
+	overflow: scroll;
+}
+::-webkit-scrollbar {
+	display: none;
+}
+.send-bar {
+	bottom: 0px;
+}
+
+.usernames {
+	border: none;
+	color: white;
+	background: transparent;
+}
+.usernames:focus {
+	border: none;
+}
+
+.chat-message-left,
+.chat-message-right {
+	display: flex;
+	flex-shrink: 0;
+	overflow-wrap: anywhere;
+}
+
+.chat-message-left {
+	width: 70%;
+	margin-right: auto;
+}
+
+.chat-message-right {
+	width: 70%;
+	flex-direction: row-reverse;
+	margin-left: auto;
+}
+
+.chat-message {
+	width: auto;
+	max-width: 60%;
+	color: skyblue;
+	overflow-wrap: anywhere;
+	position: relative;
+	align-self: center;
+	text-align: center;
+}
+
+.py-3 {
+	padding-top: 1rem !important;
+	padding-bottom: 1rem !important;
+}
+.px-4 {
+	padding-right: 1.5rem !important;
+	padding-left: 1.5rem !important;
+}
+.flex-grow-0 {
+	flex-grow: 0 !important;
+}
+.border-top {
+	border-top: 1px solid #dee2e6 !important;
+}
+.card-front {
+	background-color: #2a2b38;
+	background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg");
+}
+
+.btn-primary {
+	border-radius: 4px;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	-ms-flex-pack: center;
+	text-align: center;
+	border: none;
+	background-color: #ffeba7;
+	color: #102770;
+	box-shadow: 0 8px 24px 0 rgba(255, 235, 167, 0.2);
+}
+.btn-primary:active,
+.btn-primary:focus {
+	background-color: #102770;
+	color: #ffeba7;
+	box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+}
+.btn-primary:hover {
+	background-color: #102770;
+	color: #ffeba7;
+	box-shadow: 0 8px 24px 0 rgba(16, 39, 112, 0.2);
+}
+.flames{
+	min-width: 40%;
+}
+@media only screen and (max-width: 600px) {
+	.flames {
+	  min-width: 100%;
+	}
+  }
