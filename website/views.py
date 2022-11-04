@@ -7,6 +7,12 @@ from .hash import h
 
 views = Blueprint('views', __name__)
 
+@views.route('/', methods=['GET', 'POST'])
+@login_required
+def index():
+    return redirect("/search")
+
+
 @views.route('/chat/<username>', methods=['GET', 'POST'])
 @login_required
 def chat(username):
